@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 412076}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Chest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,8 @@ GameObject:
   - component: {fileID: 3382680}
   - component: {fileID: 2362466}
   - component: {fileID: 6525318}
-  m_Layer: 0
+  - component: {fileID: 7505902559309244540}
+  m_Layer: 9
   m_Name: Chest_top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -88,6 +89,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -112,6 +114,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!65 &6525318
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -125,6 +128,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0122824, y: 0.8503722, z: 1.6285274}
   m_Center: {x: 0, y: 0.42518598, z: 0.8000001}
+--- !u!114 &7505902559309244540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 116482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ccb9f955bbe23646ba7f02828a58f66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myObj: {fileID: 116482}
+  type: treasure
+  ID: 0
 --- !u!1 &177150
 GameObject:
   m_ObjectHideFlags: 0
@@ -137,7 +155,7 @@ GameObject:
   - component: {fileID: 3396462}
   - component: {fileID: 2355592}
   - component: {fileID: 6589484}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Chest_bot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -181,6 +199,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -205,6 +224,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!65 &6589484
 BoxCollider:
   m_ObjectHideFlags: 0
