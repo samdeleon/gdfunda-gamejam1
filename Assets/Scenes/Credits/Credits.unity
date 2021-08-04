@@ -330,37 +330,15 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!1001 &6009306811785499028
+--- !u!1001 &1872187945
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6009306810497763370, guid: ec055f9729c53ca48b03ff422a964e10, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: ddec259892e8290498aa6a29b0e0351d, type: 2}
-    - target: {fileID: 6009306811061081347, guid: ec055f9729c53ca48b03ff422a964e10, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: ddec259892e8290498aa6a29b0e0351d, type: 2}
-    - target: {fileID: 6009306811139367012, guid: ec055f9729c53ca48b03ff422a964e10, type: 3}
-      propertyPath: m_text
-      value: 'Stylized Pirate Asset Set by:
-
-        Stephen Bolger'
-      objectReference: {fileID: 0}
-    - target: {fileID: 6009306811139367035, guid: ec055f9729c53ca48b03ff422a964e10, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: ddec259892e8290498aa6a29b0e0351d, type: 2}
-    - target: {fileID: 6009306811763987056, guid: ec055f9729c53ca48b03ff422a964e10, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: ddec259892e8290498aa6a29b0e0351d, type: 2}
     - target: {fileID: 6009306811835213958, guid: ec055f9729c53ca48b03ff422a964e10, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -371,7 +349,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6009306811835213958, guid: ec055f9729c53ca48b03ff422a964e10, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6009306811835213958, guid: ec055f9729c53ca48b03ff422a964e10, type: 3}
       propertyPath: m_AnchorMax.x
@@ -445,21 +423,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6009306811835213959, guid: ec055f9729c53ca48b03ff422a964e10, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 322d9549d98b26148a47d89fa1d794bc, type: 2}
     - target: {fileID: 6009306811835213978, guid: ec055f9729c53ca48b03ff422a964e10, type: 3}
       propertyPath: m_Name
       value: CreditsUI
       objectReference: {fileID: 0}
-    - target: {fileID: 6009306811879398672, guid: ec055f9729c53ca48b03ff422a964e10, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: ddec259892e8290498aa6a29b0e0351d, type: 2}
-    - target: {fileID: 6009306812047832113, guid: ec055f9729c53ca48b03ff422a964e10, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: ddec259892e8290498aa6a29b0e0351d, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec055f9729c53ca48b03ff422a964e10, type: 3}
