@@ -30355,12 +30355,12 @@ PrefabInstance:
     - target: {fileID: 1466860205174655789, guid: 3c38f6eb6ca7f2e4aaad64139cd99bd8,
         type: 3}
       propertyPath: m_SelectedEdges.Array.data[0].a
-      value: 450
+      value: 1612
       objectReference: {fileID: 0}
     - target: {fileID: 1466860205174655789, guid: 3c38f6eb6ca7f2e4aaad64139cd99bd8,
         type: 3}
       propertyPath: m_SelectedEdges.Array.data[0].b
-      value: 451
+      value: 1613
       objectReference: {fileID: 0}
     - target: {fileID: 1466860205174655789, guid: 3c38f6eb6ca7f2e4aaad64139cd99bd8,
         type: 3}
@@ -30435,12 +30435,12 @@ PrefabInstance:
     - target: {fileID: 1466860205174655789, guid: 3c38f6eb6ca7f2e4aaad64139cd99bd8,
         type: 3}
       propertyPath: m_SelectedVertices.Array.data[0]
-      value: 450
+      value: 1612
       objectReference: {fileID: 0}
     - target: {fileID: 1466860205174655789, guid: 3c38f6eb6ca7f2e4aaad64139cd99bd8,
         type: 3}
       propertyPath: m_SelectedVertices.Array.data[1]
-      value: 451
+      value: 1613
       objectReference: {fileID: 0}
     - target: {fileID: 1466860205174655789, guid: 3c38f6eb6ca7f2e4aaad64139cd99bd8,
         type: 3}
