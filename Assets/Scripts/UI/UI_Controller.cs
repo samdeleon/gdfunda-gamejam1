@@ -79,6 +79,7 @@ public class UI_Controller : MonoBehaviour
     {
         mapsFound += 1;
         Debug.Log(mapsFound);
+
         this.counterLabel.SetText("Found: " + mapsFound);
     }
 

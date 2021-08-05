@@ -5,7 +5,6 @@ using UnityEngine;
 public class RespawningTest : MonoBehaviour
 {
     [SerializeField] private Transform player;
-    [SerializeField] private Transform dyingPlace;
     [SerializeField] private Transform respawnPlace;
     
     void OnTriggerEnter(Collider other)
