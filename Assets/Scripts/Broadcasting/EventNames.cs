@@ -44,10 +44,3 @@ public class EventNames {
 		public const string ALL_MAP_FOUND = "ALL_MAP_FOUND";
 	}
 }
-
-
-
-
-
-
-
