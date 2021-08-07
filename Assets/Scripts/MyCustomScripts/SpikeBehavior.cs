@@ -5,13 +5,14 @@ using UnityEngine;
 public class SpikeBehavior : MonoBehaviour
 {
     private GameObject player;
-    [SerializeField] Transform spawnPoint;
+    private GameObject spawnPoint;
 
     // Start is called before the first frame update
     void Start()
     {
 
         player = GameObject.FindGameObjectWithTag("Player");
+        spawnPoint = GameObject.FindGameObjectWithTag("UnderGroundRespawn");
     }
 
     // Update is called once per frame

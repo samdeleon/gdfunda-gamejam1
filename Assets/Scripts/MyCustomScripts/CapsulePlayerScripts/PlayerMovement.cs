@@ -13,7 +13,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float airMultiplier = 0.4f;
     float movementMultiplier = 10f;
 
-    [Header("Ground Detection")]
+    [Header("Falling")]
     [SerializeField] float fallMultiplier = 2.5f;
     [SerializeField] float lowJumpMultipler = 2f;
 
@@ -163,6 +163,11 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    private void ResetAmount()
+    {
+        defDashAmount = dashAmount;
+    }
+
     void ControlSpeed()
     {
         if (Input.GetKey(sprintKey) && isGrounded)
@@ -187,8 +192,4 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    private void ResetAmount()
-    {
-        defDashAmount = dashAmount;
-    }
 }
