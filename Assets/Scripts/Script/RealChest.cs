@@ -6,7 +6,7 @@ public class RealChest : MonoBehaviour
 {
     private Animator anim;
     [SerializeField] private Transform tr;
-    [SerializeField] private Transform playerTr;
+    private GameObject playerTr;
     [SerializeField] private GameObject exitDoor;
 
     // Start is called before the first frame update
@@ -14,13 +14,13 @@ public class RealChest : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         // tr = GetComponent<Transform>();
-        // playerTr = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+        playerTr = GameObject.FindGameObjectWithTag("Player");
     }
 
     // Update is called once per frame
     void Update()
     {
-        float dist = Vector3.Distance(tr.position, playerTr.position);
+        float dist = Vector3.Distance(tr.position, playerTr.transform.position);
 
         if (dist <= 3.0f)
         {

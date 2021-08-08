@@ -7,9 +7,12 @@ public class MovingPlatform : MonoBehaviour
     [SerializeField] private float platformSpeed = 1.0f;
     public List<Transform> waypoints;
     private int target;
-    public GameObject Player;
+    private GameObject Player;
   
-
+    private void Start()
+    {
+        Player = GameObject.FindGameObjectWithTag("Player");
+    }
     // Update is called once per frame
     void Update()
     {
