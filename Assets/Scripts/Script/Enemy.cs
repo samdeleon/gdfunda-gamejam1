@@ -41,7 +41,8 @@ public class Enemy : MonoBehaviour
             else
                 nextIdx++;
         }
-
-        // player.transform.position = respawnPlace.transform.position;
+        if(coll.CompareTag("Player")) {
+            player.transform.position = respawnPlace.transform.position;
+        }
     }
 }
