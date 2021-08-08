@@ -21,23 +21,39 @@ public class PlayerLook : MonoBehaviour
     float xRotation;
     float yRotation;
 
+    private bool toggleCam = true;
+
     private void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+        EventBroadcaster.Instance.AddObserver(EventNames.JabubuEvents.TOGGLE_MENU, this.CamToggle);
     }
 
     private void Update()
     {
-        mouseX = Input.GetAxisRaw("Mouse X");
-        mouseY = Input.GetAxisRaw("Mouse Y");
-         
-        yRotation += mouseX * sensX * multiplier;
-        xRotation -= mouseY * sensY * multiplier;
+        if (toggleCam)
+        {
+            mouseX = Input.GetAxisRaw("Mouse X");
+            mouseY = Input.GetAxisRaw("Mouse Y");
 
-        xRotation = Mathf.Clamp(xRotation, -90f, 90f);
+            yRotation += mouseX * sensX * multiplier;
+            xRotation -= mouseY * sensY * multiplier;
 
-        cam.transform.rotation = Quaternion.Euler(xRotation, yRotation, wallRun.tilt);
-        orientation.transform.rotation = Quaternion.Euler(0, yRotation, 0);
+            xRotation = Mathf.Clamp(xRotation, -90f, 90f);
+
+            cam.transform.rotation = Quaternion.Euler(xRotation, yRotation, wallRun.tilt);
+            orientation.transform.rotation = Quaternion.Euler(0, yRotation, 0);
+        }
+    }
+
+    private void OnDestroy()
+    {
+        EventBroadcaster.Instance.RemoveAllObservers();
+    }
+
+    void CamToggle()
+    {
+        toggleCam = !toggleCam;
     }
 }
