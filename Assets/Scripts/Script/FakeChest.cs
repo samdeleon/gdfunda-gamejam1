@@ -8,20 +8,20 @@ public class FakeChest : MonoBehaviour
     private bool isAttack = false;
     private bool isClose = false;
     [SerializeField] private Transform tr;
-    [SerializeField] private Transform playerTr;
+    private GameObject playerTr;
     [SerializeField] private Transform respawnPlace;
     // Start is called before the first frame update
     void Start()
     {
         // tr = GetComponent<Transform>();
-        // playerTr = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+        playerTr = GameObject.FindGameObjectWithTag("Player");
         anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        float dist = Vector3.Distance(tr.position, playerTr.position);
+        float dist = Vector3.Distance(tr.position, playerTr.transform.position);
 
         if (dist <= 5.0f)
         {
